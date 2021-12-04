@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
+/**
+ * @type {import('next').NextConfig}
+ */
+ module.exports = {
+  reactStrictMode: true, 
+  webpack5: false,
+  target: 'serverless',
 }
