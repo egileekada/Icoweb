@@ -8,7 +8,7 @@ export default function Services() {
             <p className='font-Poppins-Regular text-center w-540px' >We build useable and scalable products from our customer’s imagination and ensure it meets the business and user goal and as well ensure every design process is followed</p>
 
             {/* Services Options  */}
-            <div className='w-full flex  mt-16' >
+            <div className='w-full flex items-center justify-center  mt-16' >
                 <div className='border border-black pb-2 w-280px h-338px' >
                     <div className='w-full h-full flex flex-col px-8 justify-end' > 
                         <div style={{backgroundColor: '#121212'}} className='w-16 h-16 flex items-center justify-center' >
