@@ -1,13 +1,12 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Navbar from '../home-components/components/Navbar' 
+import HomeComponents from '../home-components/HomeComponents'
 
-const Home: NextPage = () => {
+export default function index() {
   return (
-    <div className=' w-full h-full'>  
+    <div className=' w-full h-full'> 
+      <HomeComponents />
     </div>
   )
-}
-
-export default Home
+} 

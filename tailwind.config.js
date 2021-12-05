@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
+  
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -63,6 +64,9 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      '280px': '280px',
+      '338px': '338px',
+      '540px': '540px',
     },
     animation: {
       none: 'none',
@@ -265,6 +269,30 @@ module.exports = {
         '"Liberation Mono"',
         '"Courier New"',
         'monospace',
+      ], 
+      'Poppins-Bold': [
+        'Poppins-Bold',
+      ],
+      'Poppins-Black': [
+        'Poppins-Black'
+      ],
+      'Poppins-Regular': [
+        'Poppins-Regular'
+      ],
+      'Poppins-SemiBold': [
+        'Poppins-SemiBold'
+      ],
+      'PublicSans-Bold': [
+        'PublicSans-Bold',
+      ],
+      'PublicSans-Medium': [
+        'PublicSans-Medium'
+      ],
+      'PublicSans-Regular': [
+        'PublicSans-Regular'
+      ],
+      'PublicSans-SemiBold': [
+        'PublicSans-SemiBold'
       ],
     },
     fontSize: {
