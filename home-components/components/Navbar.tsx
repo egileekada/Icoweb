@@ -7,7 +7,7 @@ export default function Navbar() {
     const [menu, setMenu] = React.useState(false);
     
     return ( 
-        <nav className='w-full h-auto flex flex-col items-center px-16 px-12' >
+        <nav className='w-full h-auto flex flex-col items-center px-6 lg:px-16' >
 
             <div className='w-full h-24 flex items-center' >
 
@@ -22,16 +22,16 @@ export default function Navbar() {
                     <Link href="/#services">
                         <p className="text-base font-Poppins-Regular mx-8 cursor-pointer hover:underline">Services</p>
                     </Link> 
-                    <Link href="/#">
+                    <Link href="/#projects">
                         <p className="text-base font-Poppins-Regular mx-8 cursor-pointer hover:underline">Projects</p>
                     </Link> 
-                    <Link href="/#">
+                    <Link href="/#team">
                         <p className="text-base font-Poppins-Regular mx-8 cursor-pointer hover:underline">Team</p>
                     </Link> 
                 </div>
 
                 <Link href="/#GetTheApp">
-                    <button className='w-36 h-12 rounded-full border border-black' > 
+                    <button className='w-36 h-12 rounded-full hidden justify-center items-center lg:flex  border border-black' > 
                         <p className="text-sm font-Poppins-Regular ">Lets’s Talk</p>
                     </button>
                 </Link>
