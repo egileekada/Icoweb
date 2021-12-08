@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
+import { FiMenu } from 'react-icons/fi'; 
+import { IoMdClose } from 'react-icons/io';
 
-export default function Navbar() {
-
+export default function Navbar(props: any) { 
     
     const [menu, setMenu] = React.useState(false);
     
@@ -28,52 +29,43 @@ export default function Navbar() {
                     <Link href="/#team">
                         <p className="text-base font-Poppins-Regular mx-8 cursor-pointer hover:underline">Team</p>
                     </Link> 
-                </div>
-
-                <Link href="/#GetTheApp">
-                    <button className='w-36 h-12 rounded-full hidden justify-center items-center lg:flex  border border-black' > 
-                        <p className="text-sm font-Poppins-Regular ">Lets’s Talk</p>
-                    </button>
-                </Link>
-                {/* <div className="w-full flex justify-end lg:hidden flex">
+                </div> 
+                <button onClick={()=> props.open(true)} className='w-36 h-12 rounded-full hidden justify-center items-center lg:flex  border border-black' > 
+                    <p className="text-sm font-Poppins-Regular ">Lets’s Talk</p>
+                </button> 
+                <div className="w-full flex justify-end lg:hidden flex">
 
                     {!menu
                         ?
                             <button onClick={()=> setMenu(true)} className=" w-auto h-auto text-center font-Heebo-Regular">
-                                <FiMenu size={24} color="white" />
+                                <FiMenu size={24} color="#544BC2" />
                             </button>
                         :
                             <button onClick={()=> setMenu(false)} className="xl:hidden sm:flex sm:justify-end sm:w-auto sm:h-auto text-center font-Heebo-Regular"> 
-                                <IoMdClose  size={24} color="white"/>
+                                <IoMdClose  size={24} color="#544BC2"/>
                             </button>
                     } 
-                </div> */}
+                </div>
 
             </div> 
 
-            {/* {menu 
+            {menu 
                 ?
-                <div className=' w-full h-full xl:hidden flex flex-col font-Inter-SemiBold items-center mt-0 text-white mb-4'  > 
+                <div style={{color: '#544BC2'}} className=' w-full h-full xl:hidden flex flex-col font-Inter-SemiBold items-center mt-0 text-white mb-4'  > 
                     <Link href="/#">
-                        <p onClick={()=>setMenu(false)} className="text-sm py-4 cursor-pointer ">Home</p>
-                    </Link>
-                    <Link href="/#ForIndividuals">
-                        <p onClick={()=>setMenu(false)}  className="text-sm py-4 cursor-pointer ">For Individuals</p>
-                    </Link>
-                    <Link href="/#ForBusinesses">
-                        <p onClick={()=>setMenu(false)}  className="text-sm py-4 cursor-pointer ">For Businesses</p>
-                    </Link>
-                    <Link href="/#Features" >
-                        <p onClick={()=>setMenu(false)}  className="text-sm py-4 cursor-pointer">Features</p>
-                    </Link>
-                    <Link href="/#contactus">
-                        <p onClick={()=>setMenu(false)}  className="text-sm py-4 cursor-pointer ">Contact Us</p>
-                    </Link>
-                    <Link href="/#gettheapp">
-                        <p onClick={()=>setMenu(false)}  className="text-sm py-4 cursor-pointer ">Get The App</p>
-                    </Link>
+                        <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Home</p>
+                    </Link> 
+                    <Link href="/#services">
+                        <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Services</p>
+                    </Link> 
+                    <Link href="/#projects">
+                        <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Projects</p>
+                    </Link> 
+                    <Link href="/#team">
+                        <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Team</p>
+                    </Link> 
                 </div>
-            :null} */}
+            :null}
 
         </nav>
         // <div className=' w-full px-12 py-6 flex items-center'>

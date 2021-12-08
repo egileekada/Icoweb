@@ -70,6 +70,7 @@ module.exports = {
       '540px': '540px',
       '656.24px': '656.24px',
       '673.37px': '673.37px',
+      '700px': '720px',
     },
     animation: {
       none: 'none',

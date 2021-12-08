@@ -1,6 +1,28 @@
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import React from 'react'
 
 export default function Services() {
+
+    const controls = useAnimation();
+    const { ref, inView } = useInView();  
+
+    React.useEffect(() => { 
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView])
+
+      const boxVariants = {
+        hidden: { scale: 0 },
+        visible: {
+          scale: 1,
+          transition: {
+            duration: 0.5
+          }
+        }
+      }
+
     return (
         <div style={{backgroundColor: '#FFF3EC'}} className='w-full h-auto py-32 px-6 lg:px-12 flex flex-col items-center justify-center '>
             <p  style={{backgroundColor: '#F4F4F4'}}  className='font-Poppins-Regular text-lg' >Our Services</p>
@@ -9,7 +31,7 @@ export default function Services() {
 
             {/* Services Options  */}
             <div className='w-full flex flex-col lg:flex-row  items-center justify-center  mt-16' >
-                <div className='border border-black pb-2 w-full lg:w-280px h-338px' >
+                <motion.div ref={ref} initial="hidden" animate={controls} variants={boxVariants}  className='border border-black pb-2 w-full lg:w-280px h-338px' >
                     <div className='w-full h-full flex flex-col px-8 justify-end' > 
                         <div style={{backgroundColor: '#121212'}} className='w-16 h-16 flex items-center justify-center' >
                             <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,9 +40,9 @@ export default function Services() {
                         </div>
                         <p className='font-Poppins-Regular text-lg my-10 w-40' >Brand & Identity Design</p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='border border-black w-full lg:w-auto lg:mt-0 mt-12 lg:h-338px lg:ml-12' > 
+                <motion.div initial="hidden" animate={controls} variants={boxVariants}  className='border border-black w-full lg:w-auto lg:mt-0 mt-12 lg:h-338px lg:ml-12' > 
                     <p className='font-PublicSans-Bold text-xl text-center py-12' >Product Development</p>
                     <div className='flex flex-col lg:flex-row mt-auto ' > 
                         <div className=' w-full lg:w-280px px-8 border-t lg:border-t-0 border-black lg:py-0 py-10  ' > 
@@ -51,7 +73,7 @@ export default function Services() {
                             <p className='font-Poppins-Regular text-lg my-10 w-40' >App/Software Development</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
