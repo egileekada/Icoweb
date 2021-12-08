@@ -36,7 +36,7 @@ export default function SelectedProjects() {
                 <motion.div onClick={()=> window.open("https://mploi-me.vercel.app/#ab", "_blank")}  ref={ref} initial={{x: -200}} animate={controls}  
                     transition={{ ease: "easeOut", duration: 1 }}  className=' w-full lg:w-520px cursor-pointer py-6 lg:py-0' >
                     <div className='w-full  bg-white' >
-                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Mploi.png' /> 
+                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Mploi.jpg' /> 
                     </div>
                     <p className='font-PublicSans-Bold text-xl mt-6' >Mploime</p>
                     <p className='font-Poppins-Regular text-sm mt-2'>Branding</p>
@@ -44,7 +44,7 @@ export default function SelectedProjects() {
                 <motion.div ref={ref2} onClick={()=> window.open("https://www.figma.com/proto/60Q4brbzI31BMaC29UMYbj/Ada-ndi-Igbo?node-id=2%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A2", "_blank")}   initial={{x: +200}} animate={controls2}  
                     transition={{ ease: "easeOut", duration: 1 }}  className=' w-full lg:w-520px cursor-pointer py-6 lg:py-0' >
                     <div className='w-full bg-white' >
-                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/NdiIgbo.jpeg' /> 
+                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/NdiIgbo.jpg' /> 
                     </div>
                     <p className='font-PublicSans-Bold text-xl mt-6' >Ndi Igbo</p>
                     <p className='font-Poppins-Regular text-sm mt-2 '>UI/UX & Web Developmet</p>
@@ -52,7 +52,7 @@ export default function SelectedProjects() {
                 <motion.div ref={ref3} initial={{x: -200}} animate={controls3}  
                     transition={{ ease: "easeOut", duration: 1 }} onClick={()=> window.open("https://theemma.org/", "_blank")} className=' w-full lg:w-520px cursor-pointer py-6 lg:py-0' >
                     <div className='w-full bg-white' >
-                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Emma.jpeg' />
+                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Emma.jpg' />
                     </div>
                     <p className='font-PublicSans-Bold text-xl mt-6' >The EMMAs</p>
                     <p className='font-Poppins-Regular text-sm mt-2'>Web Developement</p>
@@ -60,7 +60,7 @@ export default function SelectedProjects() {
                 <motion.div ref={ref4}  initial={{x: +200}} animate={controls4}  
                     transition={{ ease: "easeOut", duration: 1 }} onClick={()=> window.open("https://www.olokun.icoweb.website/", "_blank")} className=' w-full lg:w-520px cursor-pointer py-6 lg:py-0' >
                     <div className='w-full bg-white' >
-                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Olokun.png' /> 
+                        <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Olokun.jpg' /> 
                     </div>
                     <p className='font-PublicSans-Bold text-xl mt-6' >Olokun Store</p>
                     <p className='font-Poppins-Regular text-sm mt-2'>Web Development</p>
