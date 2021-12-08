@@ -1,12 +1,25 @@
 import React from 'react'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export default function Footer() {
+
+    const controls = useAnimation(); 
+    const [ ref, inView ]  = useInView();      
+
+    React.useEffect(() => { 
+        if (inView) {
+            controls.start({ x: 0});
+        }  
+    }, [controls, inView]) 
+
     return (
         <div style={{backgroundColor: '#FFF3EC'}} className='w-full h-auto py-32 px-6 lg:px-20' >
             <p className='font-PublicSans-Bold text-left text-3xl mb-6' >Let’s Talk</p>
             <p className='font-Poppins-Regular text-sm' >We’ve built for several clients and  they all have amazing reviews regarding our services, mind testing this?</p>
             <div className='w-full grid-cols-1 lg:grid-cols-2 grid gap-6 mt-10' >
-                <div className='w-full py-6 lg:py-0' > 
+                <motion.div ref={ref} initial={{x: -200}} animate={controls}  
+                    transition={{ ease: "easeOut", duration: 1 }}  className='w-full py-6 lg:py-0' > 
                     <div className='border border-black w-full h-140px flex items-center px-6 lg:justify-center py-6' >
                         <div className='w-auto' >
                             <p className='font-Poppins-Regular text-sm' >EMAIL</p>
@@ -42,8 +55,9 @@ export default function Footer() {
                             <path d="M11.5629 0.00458002L8.7856 0C5.6655 0 3.64909 2.12509 3.64909 5.41423V7.91055H0.856683C0.615383 7.91055 0.419983 8.1115 0.419983 8.35937V11.9763C0.419983 12.2241 0.615613 12.4249 0.856683 12.4249H3.64909V21.5514C3.64909 21.7993 3.84449 22 4.0858 22H7.7291C7.9704 22 8.1658 21.799 8.1658 21.5514V12.4249H11.4308C11.6721 12.4249 11.8675 12.2241 11.8675 11.9763L11.8688 8.35937C11.8688 8.24036 11.8227 8.12638 11.7409 8.04215C11.6592 7.95793 11.5478 7.91055 11.4319 7.91055H8.1658V5.79439C8.1658 4.77727 8.4017 4.26094 9.6916 4.26094L11.5625 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.45317C11.9989 0.20576 11.8038 0.00504002 11.5629 0.00458002Z" fill="#FF9455"/>
                         </svg>
                     </div>
-                </div>
-                <div className='w-full py-6 lg:py-0' > 
+                </motion.div>
+                <motion.div initial={{x: +200}} animate={controls}  
+                    transition={{ ease: "easeOut", duration: 1 }}  className='w-full py-6 lg:py-0' > 
                     <div className='border border-black w-full h-140px flex items-center px-6 lg:justify-center py-6' >
                         <div className='w-auto' >
                             <p className='font-Poppins-Regular text-sm' >PHONE NUMBER</p>
@@ -58,7 +72,7 @@ export default function Footer() {
                     <div className='mt-12 ' >
                         <p className='font-Poppins-Regular text-sm' >Copyright © 2021 icowebagency – RC 3244617. All Rights Reserved.</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
