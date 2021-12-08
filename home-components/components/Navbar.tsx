@@ -51,7 +51,7 @@ export default function Navbar(props: any) {
 
             {menu 
                 ?
-                <div style={{color: '#544BC2'}} className=' w-full h-full xl:hidden flex flex-col font-Inter-SemiBold items-center mt-0 text-white mb-4'  > 
+                <div style={{color: '#544BC2'}} className=' w-full h-full xl:hidden flex flex-col font-Inter-SemiBold items-center mt-0 mb-4'  > 
                     <Link href="/#">
                         <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Home</p>
                     </Link> 
@@ -64,15 +64,12 @@ export default function Navbar(props: any) {
                     <Link href="/#team">
                         <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Team</p>
                     </Link> 
+                    <Link href="https://api.whatsapp.com/send?phone=+2347030850395">
+                        <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Lets’s Talk</p>
+                    </Link> 
                 </div>
             :null}
 
-        </nav>
-        // <div className=' w-full px-12 py-6 flex items-center'>
-        //     <img src='/assets/images/logo.png' alt='logo' />
-        //     <div className='w-full flex items-center' >
-        //         <a></a>
-        //     </div>
-        // </div>
+        </nav> 
     )
 }
