@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FiMenu } from 'react-icons/fi'; 
 import { IoMdClose } from 'react-icons/io';
+import Image from 'next/image';
 
 export default function Navbar(props: any) { 
     
@@ -13,7 +14,8 @@ export default function Navbar(props: any) {
             <div className='w-full h-24 flex items-center' >
 
                 {/* website logo */}
-                <img src='../assets/images/logo.png' alt='logo' />
+
+                <Image src={'/assets/images/logo.png'} width='157px' height='43px' /> 
                 
                 {/* navigation links */}
                 <div className='w-full hidden lg:flex flex-row justify-center items-center' >

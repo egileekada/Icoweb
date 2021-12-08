@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import SelectedProjects from './components/SelectedProjects'
 import Services from './components/Services'
 import Team from './components/Team' 
+import Image from 'next/image';
 
 export default function HomeComponents() {
 
@@ -49,7 +50,11 @@ export default function HomeComponents() {
             
                 <div className='w-full h-auto -mt-16 flex justify-center items-center relative pb-20 ' >
                     <img className='lg:h-673.37px lg:w-656.24px w-full' src='../assets/images/homeimage.png' alt='logo' />
-                    <img className='absolute -mt-1' src='../assets/images/people.png' alt='logo' />
+                    {/* <img className='absolute -mt-1' src='../assets/images/people.png' alt='logo' /> */}
+                <div className='absolute z-40 -mt-1' >
+                        <Image src={'/assets/images/people.png'} className=' object-cover' width='100%' height='100%' layout='fill' objectFit='cover' /> 
+                        {/* <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Olokun.jpg' />  */}
+                    </div>
                 </div>
           </motion.div>
           {/* Services Component */}

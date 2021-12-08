@@ -54,7 +54,7 @@ export default function SelectedProjects() {
                 <motion.div ref={ref3} initial={{x: -200}} animate={controls3}  
                     transition={{ ease: "easeOut", duration: 1 }} onClick={()=> window.open("https://theemma.org/", "_blank")} className=' w-full lg:w-520px cursor-pointer py-6 lg:py-0' >
                     <div className='w-full h-280px relative lg:h-520px bg-white' >
-                        <Image src={'/assets/images/Emma.jpg'} className=' object-cover' width='100%' height='100%' layout='fill' objectFit='cover' /> 
+                        <Image src={'/assets/images/Emma.jpeg'} className=' object-cover' width='100%' height='100%' layout='fill' objectFit='cover' /> 
                         {/* <img className=' object-cover w-full h-280px lg:h-520px' src='../assets/images/Emma.jpeg' /> */}
                     </div>
                     <p className='font-PublicSans-Bold text-xl mt-6' >The EMMAs</p>
