@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import Image from 'next/image';
 
 export default function Team() {
     return (
@@ -12,9 +13,10 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
-                        <img src='/assets/images/CEO.png' className='w-40 h-40 rounded-full ' />
-                    </div>
+                    {/* <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '> */}
+                        <Image src={'/assets/images/CEO.png'} className='rounded-full ' width='170' height='170'/>
+                        {/* <img src='/assets/images/CEO.png' className='w-40 h-40 rounded-full ' /> */}
+                    {/* </div> */}
                     <p className='font-PublicSans-Medium text-center mt-4' >Abiodun Osagie</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >CEO, BUSINESS DEVELOPER</p>
                 </motion.div>
@@ -23,9 +25,7 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
-                        <img src='/assets/images/team1.jpg' className='w-40 h-40 rounded-full object-cover  ' />
-                    </div>
+                    <Image src={'/assets/images/team1.jpg'} className='rounded-full object-cover' width='170' height='170'/>
                     <p className='font-PublicSans-Medium text-center mt-4' >George Boma Smith</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Chief Technical officer</p>
                 </motion.div>
@@ -34,9 +34,7 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
-                        <img src='/assets/images/team2.jpg' className='w-40 h-40 rounded-full object-cover ' />
-                    </div>
+                    <Image src={'/assets/images/team2.jpg'} className='rounded-full object-cover' width='170' height='170'/>
                     <p className='font-PublicSans-Medium text-center mt-4' >Tekevwe Emoghene</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Chief Operations Officer</p>
                 </motion.div>
@@ -44,10 +42,8 @@ export default function Team() {
                     drag="x"
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
-                        <img src='/assets/images/Bright.png' className='w-40 h-40 rounded-full ' />
-                    </div>
+                    whileTap={{ scale: 0.9 }}  className='w-auto' >  
+                    <Image src={'/assets/images/Bright.png'} className='rounded-full object-cover' width='170' height='170'/> 
                     <p className='font-PublicSans-Medium text-center mt-4' >Bright Mba</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Product Designer</p>
                 </motion.div>
@@ -56,9 +52,7 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
-                        <img src='/assets/images/Avatar.png' className='w-40 h-40 rounded-full ' />
-                    </div>
+                    <Image src={'/assets/images/Avatar.png'} className='rounded-full bg-gray-400 object-cover' width='170' height='170'/> 
                     <p className='font-PublicSans-Medium text-center mt-4' >Ekada God's Time</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Frontend Developer</p>
                 </motion.div>
