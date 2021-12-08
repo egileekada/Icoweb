@@ -12,8 +12,8 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-40 h-40 rounded-full '>
-                        <img src='/assets/images/CEO.png' className='w-full h-full rounded-full ' />
+                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
+                        <img src='/assets/images/CEO.png' className='w-40 h-40 rounded-full ' />
                     </div>
                     <p className='font-PublicSans-Medium text-center mt-4' >Abiodun Osagie</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >CEO, BUSINESS DEVELOPER</p>
@@ -23,8 +23,8 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-40 h-40 rounded-full '>
-                        <img src='/assets/images/team1.jpeg' className='w-full h-full rounded-full object-cover  ' />
+                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
+                        <img src='/assets/images/team1.jpeg' className='w-40 h-40 rounded-full object-cover  ' />
                     </div>
                     <p className='font-PublicSans-Medium text-center mt-4' >George Boma Smith</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Chief Technical officer</p>
@@ -34,8 +34,8 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-40 h-40 rounded-full '>
-                        <img src='/assets/images/team2.jpeg' className='w-full h-full rounded-full object-cover ' />
+                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
+                        <img src='/assets/images/team2.jpeg' className='w-40 h-40 rounded-full object-cover ' />
                     </div>
                     <p className='font-PublicSans-Medium text-center mt-4' >Tekevwe Emoghene</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Chief Operations Officer</p>
@@ -45,8 +45,8 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-40 h-40 rounded-full '>
-                        <img src='/assets/images/Bright.png' className='w-full h-full rounded-full ' />
+                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
+                        <img src='/assets/images/Bright.png' className='w-40 h-40 rounded-full ' />
                     </div>
                     <p className='font-PublicSans-Medium text-center mt-4' >Bright Mba</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Product Designer</p>
@@ -56,8 +56,8 @@ export default function Team() {
                     dragConstraints={{ left: -100, right: 100 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
-                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-40 h-40 rounded-full '>
-                        <img src='/assets/images/Avatar.png' className='w-full h-full rounded-full ' />
+                    <div style={{backgroundColor: '#C4C4C4'}}  className='w-auto h-auto rounded-full '>
+                        <img src='/assets/images/Avatar.png' className='w-40 h-40 rounded-full ' />
                     </div>
                     <p className='font-PublicSans-Medium text-center mt-4' >Ekada God's Time</p>
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Frontend Developer</p>
