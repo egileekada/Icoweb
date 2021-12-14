@@ -30,7 +30,8 @@ export default function Navbar(props: any) {
                     </Link> 
                     <Link href="/#team">
                         <p className="text-base font-Poppins-Regular mx-8 cursor-pointer hover:underline">Team</p>
-                    </Link> 
+                    </Link>  
+                    <p onClick={()=> window.open("https://blog.icoweb.website/", "_blank")}  className="text-base font-Poppins-Regular mx-8 cursor-pointer hover:underline">Blog</p> 
                 </div> 
                 <button onClick={()=> props.open(true)} className='w-36 h-12 rounded-full hidden justify-center items-center lg:flex  border border-black' > 
                     <p className="text-sm font-Poppins-Regular ">Lets’s Talk</p>
@@ -66,6 +67,7 @@ export default function Navbar(props: any) {
                     <Link href="/#team">
                         <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Team</p>
                     </Link> 
+                        <p onClick={()=> window.open("https://blog.icoweb.website/", "_blank")} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Blog</p>
                     <Link href="https://api.whatsapp.com/send?phone=+2347030850395">
                         <p onClick={()=>setMenu(false)} className="text-sm py-4 font-Poppins-Regular cursor-pointer hover:underline">Lets’s Talk</p>
                     </Link> 
