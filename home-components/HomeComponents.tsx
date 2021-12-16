@@ -88,12 +88,12 @@ export default function HomeComponents() {
           {showModal ? 
               (
                   <>
-                      <div className="h-auto flex justify-center items-center overflow-x-hidden overflow-y-hidden fixed inset-0 z-40 outline-none focus:outline-none"> 
+                      <div className="h-auto flex justify-center items-center py-4 hidden lg:flex overflow-x-hidden overflow-y-auto fixed inset-0 z-40 outline-none focus:outline-none"> 
                         <motion.div 
                             initial={{ y: -50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.2, type: 'tween' }} style={{width:'450px'}} className='relative' >
-                          <img src='../assets/images/WhatsApp.jpeg' alt='whatsapp' /> 
+                            transition={{ delay: 0.2, type: 'tween' }} className='relative w-auto h-full ' >
+                          <img src='../assets/images/WhatsApp.jpeg' alt='whatsapp' className=' h-full' /> 
                           <button onClick={()=> setShowModal(false)} className=" w-auto h-auto text-center absolute z-50 top-4 right-4"> 
                               <IoMdClose  size={24} color="#544BC2"/>
                           </button>
