@@ -30,7 +30,12 @@ export default function HomeComponents() {
 
     return ( 
         <div style={{backgroundColor: '#F4F4F4', color: '#121212'}} className='w-full h-full relative overflow-x-hidden'  >
-            <Navbar open={setShowModal} />
+            <motion.div 
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2, type: 'tween' }}>
+              <Navbar open={setShowModal} />
+            </motion.div>
             {/* SalesPage Component */}
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {

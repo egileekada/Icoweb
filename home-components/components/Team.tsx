@@ -57,6 +57,26 @@ export default function Team() {
                     <p className='font-Poppins-Regular text-center mt-1 text-xs' >Frontend Developer</p>
                 </motion.div>
             </div>
+            <div className='w-full flex lg:flex-row flex-col justify-center mt-10 items-center' > 
+                <motion.div 
+                    drag="x"
+                    dragConstraints={{ left: -100, right: 100 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}  className='w-auto mx-3' > 
+                    <Image src={'/assets/images/OBOMHENSE IDEMUDIA.jpeg'} className='rounded-full bg-gray-400 object-cover' width='170' height='170'/> 
+                    <p className='font-PublicSans-Medium text-center mt-4 mx-2' >Obmhense Idemudia</p>
+                    <p className='font-Poppins-Regular text-center mt-1 text-xs' >CMO</p>
+                </motion.div>
+                <motion.div 
+                    drag="x"
+                    dragConstraints={{ left: -100, right: 100 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}  className='w-auto mx-3 lg:mt-0 mt-6' > 
+                    <Image src={'/assets/images/Aliyu Pokima.jpeg'} className='rounded-full bg-gray-400 object-cover object-top' width='170' height='170'/> 
+                    <p className='font-PublicSans-Medium text-center mt-4' >Aliyu Pokima</p>
+                    <p className='font-Poppins-Regular text-center mt-1 text-xs' >Product Manager</p>
+                </motion.div>
+            </div>
         </div>
     );
 }
