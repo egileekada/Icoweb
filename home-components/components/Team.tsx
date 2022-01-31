@@ -45,7 +45,7 @@ export default function Team() {
                     whileTap={{ scale: 0.9 }}  className='w-auto' > 
                     <Image src={'/assets/images/OBOMHENSE IDEMUDIA.jpeg'} className='rounded-full bg-gray-400 object-cover' width='170' height='170'/> 
                     <p className='font-PublicSans-Medium text-center mt-4 mx-2' >Obomhense idemudia</p>
-                    <p className='font-Poppins-Regular text-center mt-1 text-xs' >CMO Business</p>
+                    <p className='font-Poppins-Regular text-center mt-1 text-xs' >CMO, BUSINESS STRATEGIST</p>
                 </motion.div>
                 <motion.div 
                     drag="x"
