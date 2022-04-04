@@ -16,16 +16,19 @@ export default function index() {
         src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"
         // strategy="afterInteractive"
       /> */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"></script> 
-      <script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"></script> 
 
-          gtag('config', 'AW-10867698792');
-        `}
-      </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+    
+              gtag('config', 'AW-10867698792');
+            `,
+          }}
+        /> 
       {/* <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
