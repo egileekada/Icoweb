@@ -12,10 +12,10 @@ export default function index() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="p:domain_verify" content="c7200d132fcf020f2e8b8ba02a7e7489"/>
  
-      <Script
+      {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"
         // strategy="afterInteractive"
-      />
+      /> */}
       {/* <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
