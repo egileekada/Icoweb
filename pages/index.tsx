@@ -16,7 +16,7 @@ export default function index() {
         src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"
         // strategy="afterInteractive"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      {/* <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -24,7 +24,7 @@ export default function index() {
 
           gtag('config', 'AW-10867698792');
         `}
-      </Script>
+      </Script> */}
         {/* <!-- Global site tag (gtag.js) - Google Ads: 10867698792 --> */}
 {/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"></script>  */}
       </Head>
