@@ -26,7 +26,7 @@ export default function index() {
         `}
       </Script> */}
         {/* <!-- Global site tag (gtag.js) - Google Ads: 10867698792 --> */}
-{/* <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"></script>  */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10867698792"></script> 
       </Head>
       <HomeComponents />
     </div>
