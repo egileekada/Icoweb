@@ -13,13 +13,13 @@ const WhatWeDo = () => {
           ensure every design{"\n"} process is followed.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-6">
-        <p className=" bg-gray-100 text-xs font-bold px-2 py-4">
+      <div className="m-8 p-8 grid grid-rows-2 grid-flow-col gap-4 auto-cols-max">
+        <p className=" bg-gray-100 text-xs font-bold p-4">
           {"Brand & Identity Design"}
         </p>
-        <p className=" bg-gray-100 text-xs font-bold">User Experience</p>
-        <p className=" bg-gray-100 text-xs font-bold">User Interface</p>
-        <p className=" bg-gray-100 text-xs font-bold">
+        <p className=" bg-gray-100 text-xs font-bold p-4">User Experience</p>
+        <p className=" bg-gray-100 text-xs font-bold p-4">User Interface</p>
+        <p className=" bg-gray-100 text-xs font-bold p-4">
           Software/App Development
         </p>
       </div>
