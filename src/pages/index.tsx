@@ -6,6 +6,8 @@ import Link from "next/link";
 import NavBar from "../components/Navbar";
 import Firstsection from "../components/Firstsection";
 import WhatWeDo from "../components/WhatWeDo";
+import ProjectsHandled from "../components/ProjectsHandled";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +21,8 @@ const Home: NextPage = () => {
         <NavBar />
         <Firstsection />
         <WhatWeDo />
+        <ProjectsHandled />
+        <Footer />
       </div>
     </>
   );
